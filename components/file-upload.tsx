@@ -20,7 +20,7 @@ import { toast } from "sonner";
 
 export type FileUploadProps = {
   maxFiles?: number;
-  maxSize?: number; // in MB
+  maxSize?: number;
   accept?: string;
   onFilesChange?: (files: File[]) => void;
   className?: string;
@@ -36,7 +36,7 @@ type FileWithPreview = {
 
 export function FileUpload({
   maxFiles = 5,
-  maxSize = 5, // 5MB
+  maxSize = 5, 
   accept = "image/*,application/pdf",
   onFilesChange,
   className,
@@ -106,7 +106,7 @@ export function FileUpload({
       }
 
       // Simulate upload progress
-      newFiles.forEach((fileWithPreview, index) => {
+      newFiles.forEach((fileWithPreview) => {
         simulateUpload(updatedFiles.indexOf(fileWithPreview));
       });
     },
