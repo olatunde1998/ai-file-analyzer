@@ -22,7 +22,7 @@ const ResumeCard = ({
     };
 
     loadResume();
-  }, [imagePath]);
+  }, [imagePath, fs]);
 
   return (
     <Link
