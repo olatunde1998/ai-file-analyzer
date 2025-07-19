@@ -8,7 +8,10 @@ export const contentType = "image/png";
 export type OGImageType = "home" | "wipe" | "upload" | "resume";
 
 // Main Function
-export default async function generateOgImage(type: OGImageType) {
+export default async function generateOgImage(
+  type: OGImageType,
+  props: { title?: string; description?: string }
+) {
   const interSemiBold = await readFile(
     join(process.cwd(), "fonts/Inter-SemiBold.ttf")
   );
@@ -48,7 +51,7 @@ export default async function generateOgImage(type: OGImageType) {
     },
   };
 
-  const { background } = styleMap[type];
+  const { background, titleSize, descSize } = styleMap[type];
 
   return new ImageResponse(
     (
@@ -76,14 +79,14 @@ export default async function generateOgImage(type: OGImageType) {
             maxWidth: "90%",
           }}
         >
-          {/* <h1
+          <h1
             style={{ fontSize: titleSize, fontWeight: 600, marginBottom: 20 }}
           >
             {props.title}
           </h1>
           <p style={{ fontSize: descSize, opacity: 0.8, fontWeight: 300 }}>
             {props.description}
-          </p> */}
+          </p>
         </div>
       </div>
     ),
