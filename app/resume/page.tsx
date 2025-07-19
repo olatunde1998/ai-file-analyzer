@@ -7,10 +7,6 @@ import ATS from "@/components/ATS";
 import Image from "next/image";
 import Link from "next/link";
 
-export const meta = () => [
-  { title: "Resumind | Review " },
-  { name: "description", content: "Detailed overview of your resume" },
-];
 
 export default function Resume({
   params,
@@ -22,7 +18,7 @@ export default function Resume({
   const [imageUrl, setImageUrl] = useState("");
   const [resumeUrl, setResumeUrl] = useState("");
   const [feedback, setFeedback] = useState<Feedback | null>(null);
-//   const router = useRouter();
+  //   const router = useRouter();
 
   //   useEffect(() => {
   //     if (!isLoading && !auth.isAuthenticated)
