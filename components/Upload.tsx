@@ -10,7 +10,7 @@ import Navbar from "./Navbar";
 import Image from "next/image";
 
 const Upload = () => {
-  const { auth, isLoading, fs, ai, kv } = usePuterStore();
+  const {fs, ai, kv } = usePuterStore();
   const router = useRouter();
   const [isProcessing, setIsProcessing] = useState(false);
   const [statusText, setStatusText] = useState("");

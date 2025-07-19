@@ -1,25 +1,27 @@
 "use client";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { usePuterStore } from "@/lib/puter";
+// import { usePuterStore } from "@/lib/puter";
 import ResumeCard from "./ResumeCard";
 import Image from "next/image";
 import Navbar from "./Navbar";
 import Link from "next/link";
 
 export default function Home() {
-    const { auth, kv } = usePuterStore();
-  const router = useRouter();
+  // const { auth, kv } = usePuterStore();
+  //   const router = useRouter();
   const [resumes, setResumes] = useState<Resume[]>([]);
   const [loadingResumes, setLoadingResumes] = useState(false);
 
-//   useEffect(() => {
-//     if (!auth.isAuthenticated) router.push("/auth?next=/");
-//   }, [auth.isAuthenticated]);
+  //   useEffect(() => {
+  //     if (!auth.isAuthenticated) router.push("/auth?next=/");
+  //   }, [auth.isAuthenticated]);
 
   useEffect(() => {
     const loadResumes = async () => {};
     loadResumes();
+      setLoadingResumes(false);
+      setResumes([])
   }, []);
 
   return (
