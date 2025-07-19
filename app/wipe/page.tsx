@@ -1,7 +1,7 @@
 "use client";
 import { usePuterStore } from "@/lib/puter";
-// import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+// import { useRouter } from "next/navigation";
 
 export default function WipeApp() {
   const { auth, isLoading, error, fs, kv } = usePuterStore();
