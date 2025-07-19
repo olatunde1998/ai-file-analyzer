@@ -13,7 +13,7 @@ export default async function generateOgImage(
   props: { title?: string; description?: string }
 ) {
   const interSemiBold = await readFile(
-    join(process.cwd(), "fonts/Inter-SemiBold.ttf")
+    join(process.cwd(), "public/fonts/Inter-SemiBold.ttf")
   );
 
   // Read the background image file
