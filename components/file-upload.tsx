@@ -17,6 +17,7 @@ import { Label } from "@/components/ui/label";
 import { getAiResult } from "@/server/ai";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
+import Image from "next/image";
 
 export type FileUploadProps = {
   maxFiles?: number;
@@ -36,7 +37,7 @@ type FileWithPreview = {
 
 export function FileUpload({
   maxFiles = 5,
-  maxSize = 5, 
+  maxSize = 5,
   accept = "image/*,application/pdf",
   onFilesChange,
   className,
@@ -282,7 +283,9 @@ export function FileUpload({
                               <div className="flex-shrink-0">
                                 {file.preview ? (
                                   <div className="relative w-10 h-10 rounded overflow-hidden">
-                                    <img
+                                    <Image
+                                      width={100}
+                                      height={100}
                                       src={file.preview || "/placeholder.svg"}
                                       alt={file.file.name}
                                       className="w-full h-full object-cover"
