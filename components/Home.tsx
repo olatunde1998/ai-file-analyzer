@@ -30,11 +30,17 @@ export default function Home() {
 
       <section className="flex flex-col items-center gap-8 pt-12 mx-15 pb-5">
         <div className="flex flex-col items-center gap-8 max-w-4xl text-center py-16">
-          <h1>Track Your Applications & Resume Ratings</h1>
+          <h1 className="text-6xl  text-gradient leading-tight tracking-[1px] font-semibold">
+            Track Your Applications & Resume Ratings
+          </h1>
           {!loadingResumes && resumes?.length === 0 ? (
-            <h2>No resumes found. Upload your first resume to get feedback.</h2>
+            <h2 className="text-3xl text-dark-200">
+              No resumes found. Upload your first resume to get feedback.
+            </h2>
           ) : (
-            <h2>Review your submissions and check AI-powered feedback.</h2>
+            <h2 className="text-2xl text-dark-200">
+              Review your submissions and check AI-powered feedback.
+            </h2>
           )}
         </div>
         {loadingResumes && (
