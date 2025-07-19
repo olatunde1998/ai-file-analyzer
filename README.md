@@ -45,7 +45,7 @@ Create a `.env` file in the project root:
 # Site Information (Optional)
 NODE_ENV="development"
 NEXT_PUBLIC_BASEURL="backendurl goes here"
-NEXT_PUBLIC_APP_URL=https://app.theincite360.com
+NEXT_PUBLIC_APP_URL=https://ai-file-analyzer.vercel.app
 
 # Next-Auth Config
 NEXTAUTH_SECRET=your_nextauth_secrete
