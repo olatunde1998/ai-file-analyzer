@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+<h1>AI Resume Analyzer</h1>
+<h6><i>Manage your Job Application with Resume Analyzer</i></h6>
+<hr />
+</div>
 
-## Getting Started
+Build an AI-powered Resume Analyzer with React, NextJs, Typescript, Tailwindcss and Puter.js! Implement seamless auth, upload and store resumes, and match candidates to jobs using smart AI evaluations. Get custom feedback and ATS scores tailored to each listing—all wrapped in a clean, reusable UI. Google, Facebook, and Healthgrades for comprehensive review management.
 
-First, run the development server:
+# 🏗️ Tech Stack
+
+- **Framework**: [Next.js 14](https://nextjs.org/) with App Router
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Authentication**: [NextAuth](https://next-auth.js.org/)
+- **AI Models**: [Vercel AI SDK](https://ai-sdk.dev/) (openai models, gemini models)
+- **Framer Motion**: [Framer Motion](https://motion.dev/docs)
+- **React-Hook Form**: [Redux Hook Form](https://react-hook-form.com)
+- **Zustand**: [Zustand](https://zustand.docs.pmnd.rs/getting-started/introduction)
+- **Icons**: [Lucide React](https://lucide.dev/)
+
+
+# 🎯 Prototype
+
+![Minion](public/prototype.png)
+
+# 🚀 How to Contribute
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/olatunde1998/ai-resume-analyzer.git
+cd ai-resume-analyzer
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Environment Setup
+
+Create a `.env` file in the project root:
+
+```env
+# Site Information (Optional)
+NODE_ENV="development"
+NEXT_PUBLIC_BASEURL="backendurl goes here"
+NEXT_PUBLIC_APP_URL=https://app.theincite360.com
+
+# Next-Auth Config
+NEXTAUTH_SECRET=your_nextauth_secrete
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_DEBUG=true
+
+
+# OpenAI API & Gemini API Key
+OPENAI_API_KEY=tezza_openai_api_key
+GEMINI_API_KEY=tezza_gemini_api_key
+
+```
+
+### 4. Start Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to see your application running!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+AWS Amplify was used to deploy the app.
 
-## Learn More
+- [AWS AMPLIFY](https://us-east-1.console.aws.amazon.com/amplify)
 
-To learn more about Next.js, take a look at the following resources:
+# License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The MIT License - Copyright (c) 2025 - Present, geodevcodes / Storage Service.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🆘 Support
 
-## Deploy on Vercel
+- **Vercel AI-SDK**: [Vercel AI-SDK Documentation](https://ai-sdk.dev/docs/introduction/)
+- **NextAuth**: [Appwrite Documentation](https://next-auth.js.org/)
+- **Next.js internationalization (i18n)**: [Next.js internationalization (i18n)](https://next-intl.dev/docs)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🙏 Acknowledgments
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org) for Frontend 
+- [Vercel AI-SDK](https://ai-sdk.dev/) for AI model access
+- [Tailwind CSS](https://tailwindcss.com)
+- [Lucide](https://lucide.dev) for icons
+- [NextAuth](https://next-auth.js.org/)
+
+## Built by
+
+- [Rasheed Olatunde](https://github.com/olatunde1998) (Senior Software Developer)
