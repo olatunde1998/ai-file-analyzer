@@ -28,7 +28,7 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
   const file = acceptedFiles[0] || null;
 
   return (
-    <div className="w-full bg-gradient-to-b from-light-blue-100 to-light-blue-200 p-4 rounded-2xl">
+    <div className="w-full bg-[#A7BFF14D] bg-gradient-to-b from-light-blue-100 to-light-blue-200 p-4 rounded-2xl">
       <div {...getRootProps()}>
         <input {...getInputProps()} />
 
