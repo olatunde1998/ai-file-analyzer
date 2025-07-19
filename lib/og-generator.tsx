@@ -5,10 +5,10 @@ import { join } from "node:path";
 // Content-Type
 export const contentType = "image/png";
 
-export type OGImageType = "home" | "blog" | "blog-detail";
+export type OGImageType = "home" | "wipe" | "upload" | "resume";
 
 // Main Function
-export default async function generateOgImage(type: OGImageType, props: any) {
+export default async function generateOgImage(type: OGImageType) {
   const interSemiBold = await readFile(
     join(process.cwd(), "fonts/Inter-SemiBold.ttf")
   );
@@ -31,19 +31,24 @@ export default async function generateOgImage(type: OGImageType, props: any) {
       titleSize: 80,
       descSize: 40,
     },
-    blog: {
+    wipe: {
       background: `url(${dataUrl})`,
       titleSize: 60,
       descSize: 30,
     },
-    "blog-detail": {
+    upload: {
+      background: `url(${dataUrl})`,
+      titleSize: 70,
+      descSize: 35,
+    },
+    resume: {
       background: `url(${dataUrl})`,
       titleSize: 70,
       descSize: 35,
     },
   };
 
-  const { background, titleSize, descSize } = styleMap[type];
+  const { background } = styleMap[type];
 
   return new ImageResponse(
     (
