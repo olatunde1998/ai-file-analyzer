@@ -1,5 +1,11 @@
 // import { FileUpload } from "@/components/file-upload";
 import Home from "@/components/Home";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Resumind",
+  description: "Smart feedback for your dream job!",
+};
 
 export default function HomePage() {
   return (
