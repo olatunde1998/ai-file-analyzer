@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface Suggestion {
@@ -55,7 +56,9 @@ const ATS: React.FC<ATSProps> = ({ score, suggestions }) => {
         <div className="space-y-3">
           {suggestions.map((suggestion, index) => (
             <div key={index} className="flex items-start gap-3">
-              <img
+              <Image
+                width={100}
+                height={100}
                 src={
                   suggestion.type === "good"
                     ? "/icons/check.svg"
