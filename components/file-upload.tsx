@@ -56,13 +56,7 @@ export function FileUpload({
       // Check if adding these files would exceed the max files limit
       if (files.length + selectedFiles.length > maxFiles) {
         toast.error(
-          `Too many files, You can only upload up to ${maxFiles} files at once.`,
-          {
-            style: {
-              background: "#ef4444",
-              color: "white",
-            },
-          }
+          `Too many files, You can only upload up to ${maxFiles} files at once.`
         );
         return;
       }
@@ -73,13 +67,7 @@ export function FileUpload({
         // Check file size
         if (file.size > maxSize * 1024 * 1024) {
           toast.error(
-            `File too large, ${file.name} exceeds the ${maxSize}MB size limit.`,
-            {
-              style: {
-                background: "#ef4444",
-                color: "white",
-              },
-            }
+            `File too large, ${file.name} exceeds the ${maxSize}MB size limit.`
           );
           return;
         }
@@ -111,7 +99,7 @@ export function FileUpload({
         simulateUpload(updatedFiles.indexOf(fileWithPreview));
       });
     },
-    [files, maxFiles, maxSize, onFilesChange, toast]
+    [files, maxFiles, maxSize, onFilesChange]
   );
 
   const simulateUpload = (fileIndex: number) => {
