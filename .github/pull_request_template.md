@@ -1,6 +1,6 @@
 ## Issue ticket number and link
 
-[ai-file-analyzer-#](https://github.com/olatunde1998/ai-file-analyzer/issues/{{NO}})
+[ai-resume-analyzer-#](https://github.com/olatunde1998/ai-resume-analyzer/issues/{{NO}})
 
 ## Describe your changes
 
