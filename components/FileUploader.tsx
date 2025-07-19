@@ -18,13 +18,12 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
 
   const maxFileSize = 20 * 1024 * 1024; // 20MB in bytes
 
-  const { getRootProps, getInputProps, acceptedFiles } =
-    useDropzone({
-      onDrop,
-      multiple: false,
-      accept: { "application/pdf": [".pdf"] },
-      maxSize: maxFileSize,
-    });
+  const { getRootProps, getInputProps, acceptedFiles } = useDropzone({
+    onDrop,
+    multiple: false,
+    accept: { "application/pdf": [".pdf"] },
+    maxSize: maxFileSize,
+  });
 
   const file = acceptedFiles[0] || null;
 
@@ -58,7 +57,7 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
               </div>
               <button
                 className="p-2 cursor-pointer"
-                onClick={(e) => {
+                onClick={() => {
                   onFileSelect?.(null);
                 }}
               >
