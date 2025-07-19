@@ -81,7 +81,7 @@ The MIT License - Copyright (c) 2025 - Present, geodevcodes / Storage Service.
 
 - **Vercel AI-SDK**: [Vercel AI-SDK Documentation](https://ai-sdk.dev/docs/introduction/)
 - **NextAuth**: [Appwrite Documentation](https://next-auth.js.org/)
-- **Next.js internationalization (i18n)**: [Next.js internationalization (i18n)](https://next-intl.dev/docs)
+- **Puter**: [Puter](https://docs.puter.com/)
 
 ## 🙏 Acknowledgments
 
